@@ -17,12 +17,12 @@
       <h1>HTML SEMÂNTICO E CSS</h1>
       <span class="material-symbols-outlined"> logout </span>
     </header>
-    <nav>
+      <nav>
         <ul>
          <li>HTML</li>
          <li>CSS</li>
-        </ul></nav>
-    <aside>Eu sou um ASIDE</aside>
+        </ul>
+      </nav>
     <main>
       <h1>INTRODUÇÃO</h1>
       <article>
@@ -85,63 +85,83 @@
     </ul>
         <h3>Conhecendo os elementos semânticos do HTML5</h3> 
         <div class="html-semantic">
-         <h1> <code><strong> &lt;meta&gt;</strong> </code> </h1>
-      <p class="content">A <strong>&lt;meta&gt;</strong> ajuda o seu site a descrever seu conteúdo aos buscadores, como o Google. Aqui você poderá dizer qual a codificação (charset), descrição e até palavras-chaves referentes a sua página.
+  <h1> <code><strong> &lt;meta&gt;</strong> </code> </h1>
+<p class="content">A <strong>&lt;meta&gt;</strong> ajuda o seu site a descrever seu conteúdo aos buscadores, como o Google. Aqui você poderá dizer qual a codificação (charset), descrição e até palavras-chaves referentes a sua página.
 
-      Essas são importantes justamente por identificar o site aos buscadores, ajudando no SEO (Search Engine Optimization). O Google não utiliza somente as metas para realizar suas buscas, mas elas são uma parte importante.
-          <ul>
-              <li><strong>description:</strong> guarda a descrição do site, utilizado nos motores de busca.</li>
-              <li><strong>keywords:</strong> palavras chaves relacionadas ao site, utilizada nos primórdios pelos motores de busca.</li>
-              <li><strong>author:</strong> identifica o autor do site</li>
-              <li><strong>robots:</strong> ajuda os robôs dos motores de busca a indexar ou não um site. Com esta opção podemos dizer se uma determinada página do site não deve ser mostrada nos resultados de uma busca.</li>
-          </ul>
+Essas são importantes justamente por identificar o site aos buscadores, ajudando no SEO (Search Engine Optimization). O Google não utiliza somente as metas para realizar suas buscas, mas elas são uma parte importante.
+   <ul>
+       <li><strong>description:</strong> guarda a descrição do site, utilizado nos motores de busca.</li>
+       <li><strong>keywords:</strong> palavras chaves relacionadas ao site, utilizada nos primórdios pelos motores de busca.</li>
+       <li><strong>author:</strong> identifica o autor do site</li>
+       <li><strong>robots:</strong> ajuda os robôs dos motores de busca a indexar ou não um site. Com esta opção podemos dizer se uma determinada página do site não deve ser mostrada nos resultados de uma busca.</li>
+   </ul>
+   <span>Exemplo de código:</span>
 <pre >
-  <code>
- &lt;head&gt;
-   &lt;title&gt;Página do Burnes - Home &lt;/title&gt;
-   &lt;meta charset="utf-8"&gt;
-   &lt;meta name="description" content="Página do Burnes sobre HTML e CSS"&gt;
-   &lt;meta name="keywords" content="html, css, js, site"&gt;
-   &lt;meta name="robots" content="index"&gt;
- &lt;/head&gt;
-  </code>
+<code>
+&lt;head&gt;
+&lt;title&gt;Página do Burnes - Home &lt;/title&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta name="description" content="Página do Burnes sobre HTML e CSS"&gt;
+&lt;meta name="keywords" content="html, css, js, site"&gt;
+&lt;meta name="robots" content="index"&gt;
+&lt;/head&gt;
+</code>
 
 </pre>
+</p>
+</div>
+        <div class="html-semantic">
+      <h1>
+        <code><strong>&lt;nav&gt; </strong> </code>
+      </h1>
+      <p>
+        O elemento<code><strong> &lt;nav&gt; </strong></code> representa um menu
+        de navegação na sua página. Normalmente é o primeiro elemento da nossa
+        página, mas independentemente da posição que você escolher para a sua
+        navbar é boa prática envolver o agrupamento de links com esta tag.
       </p>
-      </div>
-        <div class="html-semantic">
-         <h1> <code><strong>&lt;nav&gt; </strong> </code> </h1>
-      <p>O elemento<code><strong> &lt;nav&gt; </strong></code> representa um menu de navegação na sua página. Normalmente é o primeiro elemento da nossa página, mas independentemente da posição que você escolher para a sua navbar é boa prática envolver o agrupamento de links com esta tag.</p>
+      <span>Exemplo de código:</span>
       <pre>
-  <code>
-   &lt;nav&gt;
-      &lt;ul&gt;
-        &lt;li&gt; &lt;a&gt; href="”#”">pagina 1&lt;/a&gt; &lt;/ul&gt;
-        &lt;li&gt; &lt;a&gt; href="”#”">pagina 2&lt;/a&gt; &lt;/ul&gt;
-        &lt;li&gt; &lt;a&gt; href="”#”">pagina 3&lt;/a&gt; &lt;/ul&gt;
-        &lt;li&gt; &lt;a&gt;href="”#”">pagina 4 &lt;/a&gt; &lt;/ul&gt;
-       &lt;/ul&gt;
-    &lt;/nav&gt;
-  </code>
+ <code>
+&lt;nav&gt;
+&lt;ul&gt;
+ &lt;li&gt; &lt;a&gt; href="”#”">pagina 1&lt;/a&gt; &lt;/ul&gt;
+ &lt;li&gt; &lt;a&gt; href="”#”">pagina 2&lt;/a&gt; &lt;/ul&gt;
+ &lt;li&gt; &lt;a&gt; href="”#”">pagina 3&lt;/a&gt; &lt;/ul&gt;
+ &lt;li&gt; &lt;a&gt;href="”#”">pagina 4 &lt;/a&gt; &lt;/ul&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+</code>
 </pre>
-      </div>
-        <div class="html-semantic">
-         <h1> <code><strong> &lt;section&gt;</strong> </code> </h1>
-      <p>O elemento <code><strong>&lt;section&gt;</strong> </code> representa uma seção dentro de um documento e geralmente contém um título, o qual é definido por meio de um dos elementos entre<code> <strong>&lt;h1&gt;</strong></code> e <code><strong>&lt;h6&gt;</strong></code>. Podemos utilizar o <code><strong>&lt;section&gt;</strong> </code>, por exemplo, para descrever as seções/tópicos de um documento.</p>
-         <pre>
-  <code>
-    &lt;section&gt;
-      &lt;h3&gt; Seção 1 &lt;/h3&gt;
-      &lt;p&gt;   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-      eiusmod ...
-      &lt;/p&gt;
-    &lt;/section&gt;
-  </code>
+    </div>
+      <div class="html-semantic">
+      <h1>
+        <code><strong> &lt;section&gt;</strong> </code>
+      </h1>
+      <p>
+        O elemento <code><strong>&lt;section&gt;</strong> </code> representa uma
+        seção dentro de um documento e geralmente contém um título, o qual é
+        definido por meio de um dos elementos entre<code>
+          <strong>&lt;h1&gt;</strong></code
+        >
+        e <code><strong>&lt;h6&gt;</strong></code
+        >. Podemos utilizar o <code><strong>&lt;section&gt;</strong> </code>,
+        por exemplo, para descrever as seções/tópicos de um documento.
+      </p>
+      <span>Exemplo de código:</span>
+      <pre>
+<code>
+&lt;section&gt;
+&lt;h3&gt; Seção 1 &lt;/h3&gt;
+&lt;p&gt;   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+eiusmod ...
+&lt;/p&gt;
+&lt;/section&gt;
+</code>
 </pre>
-      </div>
-       
+    </div>
+
    <iframe width="300" src="https://www.youtube.com/embed/pKOp7pQQzNM?si=kU_tj0uVqHf4qUzu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-  
     </main>
     <footer>
       <p>Escrito por Gisélida Cristine</p>
