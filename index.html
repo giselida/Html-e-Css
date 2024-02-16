@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="assets/images/html.png" type="image/x-icon">
     <title>Html e Css</title>
   </head>
   <body>
@@ -23,102 +24,111 @@
         <li>CSS</li>
       </ul>
     </nav>
+    <article>
+      <figure>
+        <img src="assets/images/html-semantic.jpg" alt="html semântico" />
+      </figure>
+    </article>
     <main>
       <h1>INTRODUÇÃO</h1>
-      <article>
-        <figure>
-          <img src="img/html-semantic.jpg" alt="html semântico" />
-        </figure>
-      </article>
+
       <div class="card">
-        <h1>SEMÂNTICA</h1>
-        <div class="content">
-          <p>
-            Na <strong>programação</strong>, a Semântica refere-se ao significado de um pedaço de código - por exemplo
-            <em>"que efeito tem a execução daquela linha de JavaScript?"</em> ou <em>"que propósito ou função esse elemento HTML tem"</em>
-            <em>(em vez de "como é ?".) </em> ​
-          </p>
-          <p>
-            Atualmente o papel da HTML não é apenas estruturar documentos para a web, mas também descrever o significado do conteúdo
-            presente nesses documentos por meio de tags semânticas. O HTML semântico tem como objetivo descrever o significado do conteúdo
-            presente em documentos HTML, tornando-o mais claro tanto para programadores quanto para browsers e outras engines que processam
-            essa informação.
-          </p>
-          <p>
-            <strong>HTML</strong> (HyperText Markup Language) é um linguagem de marcação muito conhecida e utilizada na criação de páginas
-            web. Ela renderiza informações nos navegadores de internet juntamente com o CSS, JavaScript e outras linguagens de
-            desenvolvimento web, permitindo que nós tenhamos acesso a todo o conteúdo de um site.
-          </p>
-          <p>
-            O HTML é como o <strong>esqueleto</strong> que dará forma às páginas. É a estrutura mais básica. Ele setoriza as diversas partes
-            da página de acordo com o seu conteúdo, ou seja, ajuda a endereçar cada um dos elementos que a constitui, como os textos,
-            imagens, menu de navegação, links, dentre outros. Posteriormente ele irá auxiliar a aplicação de outras funcionalidades a um
-            site.
-          </p>
+        <div class="introduction">
+          <h1>#SEMÂNTICA</h1>
+          <div class="content">
+            <p>
+              Na <strong>programação</strong>, a Semântica refere-se ao significado de um pedaço de código - por exemplo
+              <em>"que efeito tem a execução daquela linha de JavaScript?"</em> ou
+              <em>"que propósito ou função esse elemento HTML tem"</em> <em>(em vez de "como é ?".) </em> ​
+            </p>
+            <p>
+              Atualmente o papel da HTML não é apenas estruturar documentos para a web, mas também descrever o significado do conteúdo
+              presente nesses documentos por meio de tags semânticas. O HTML semântico tem como objetivo descrever o significado do conteúdo
+              presente em documentos HTML, tornando-o mais claro tanto para programadores quanto para browsers e outras engines que
+              processam essa informação.
+            </p>
+            <p>
+              <strong>HTML</strong> (HyperText Markup Language) é um linguagem de marcação muito conhecida e utilizada na criação de páginas
+              web. Ela renderiza informações nos navegadores de internet juntamente com o CSS, JavaScript e outras linguagens de
+              desenvolvimento web, permitindo que nós tenhamos acesso a todo o conteúdo de um site.
+            </p>
+            <p>
+              O HTML é como o <strong>esqueleto</strong> que dará forma às páginas. É a estrutura mais básica. Ele setoriza as diversas
+              partes da página de acordo com o seu conteúdo, ou seja, ajuda a endereçar cada um dos elementos que a constitui, como os
+              textos, imagens, menu de navegação, links, dentre outros. Posteriormente ele irá auxiliar a aplicação de outras
+              funcionalidades a um site.
+            </p>
+          </div>
         </div>
-        <h2>Tags HTML e seus Significados</h2>
-        <ul>
-          <li><strong>&lt;!DOCTYPE&gt;:</strong> define o tipo de documento</li>
-          <li><strong>&lt;html&gt;:</strong> define o início do documento HTML, todas as demais tags devem estar dentro desta tag</li>
-          <li><strong>&lt;head&gt;:</strong> cabeçalho onde ficam os metadados do documento, como meta tags, CSS e JavaScript</li>
-          <li>
-            <strong>&lt;title&gt;:</strong> define o título do documento, mostrado na barra de títulos do navegador e como link nos
-            mecanismos de busca
-          </li>
-          <li><strong> &lt;base&gt;:</strong> define a URL base do documento</li>
-          <li><strong> &lt;link&gt;:</strong> utilizado para linkar um arquivo de imagem ou CSS à página HTML</li>
-          <li><strong> &lt;script&gt;:</strong> utilizado para escrever ou anexar um arquivo normalmente JavaScript à página</li>
-          <li><strong> &lt;meta&gt;:</strong> meta tags, como charset, description, viewport ou keywords</li>
-          <li><strong> &lt;style&gt;:</strong> utilizada para adicionar um código CSS à página</li>
-          <li><strong> &lt;body&gt;:</strong> corpo ou área principal do documento, dentro deste deve ficar o conteúdo da sua página</li>
-          <li>
-            <strong> &lt;header&gt;: </strong>define um cabeçalho da página ou de uma seção, normalmente pode conter um menu (nav), um logo
-            ou link
-          </li>
-          <li><strong> &lt;nav&gt;: </strong>define uma área de navegação contendo links, para a formação de menus com hiperlinks</li>
-          <li><strong> &lt;footer&gt;:</strong> define o rodapé de uma página ou seção</li>
-          <li>
-            <strong> &lt;main&gt;:</strong> define o conteúdo principal da página, deve ser utilizado apenas uma única vez em cada página
-          </li>
-          <li><strong> &lt;section&gt;:</strong> define uma seção do documento</li>
-          <li><strong> &lt;article&gt;:</strong> pode ser um post ou notícia de um fórum ou blog, define um conteúdo independente</li>
-          <li><strong> &lt;h1&gt; a &lt;h6&gt;: </strong> representam 6 níveis de títulos, sendo o &lt;h1&gt; de maior importância</li>
-          <li><strong> &lt;p&gt;:</strong> define um parágrafo</li>
-          <li><strong> &lt;br&gt;: </strong>define uma quebra de linha</li>
-          <li><strong> &lt;div&gt;: </strong>define uma camada sem formatação, genérico</li>
-          <li><strong> &lt;ul&gt;: </strong>define uma lista não ordenada</li>
-          <li><strong> &lt;li&gt;: </strong>define um elemento ou item da lista não ordenada</li>
-          <li><strong> &lt;a&gt;: </strong>define um link que deve ser apontado com o atributo href</li>
-          <li>
-            <strong> &lt;img&gt;: </strong>define a utilização de uma imagem (JPG, GIF, PNG e outras). A imagem deve ser apontada com o uso
-            do atributo src
-          </li>
-          <li><strong> &lt;strong&gt;:</strong> apesar de deixar em negrito, representa a importância deste texto no meio da frase</li>
-          <li><strong> &lt;span&gt;:</strong> utilizado para definir pequenos trechos de textos</li>
-          <li><strong> &lt;pre&gt;:</strong>exibe o texto exatamente da forma que foi digitado, incluindo tabulações, espaços e enters</li>
-        </ul>
-        <h3>Conhecendo os elementos semânticos do HTML5</h3>
-        <div class="html-semantic">
-          <h1>
-            <code><strong> &lt;meta&gt;</strong> </code>
-          </h1>
-          <p class="tag">
-            A <strong>&lt;meta&gt;</strong> ajuda o seu site a descrever seu conteúdo aos buscadores, como o Google. Aqui você poderá dizer
-            qual a codificação (charset), descrição e até palavras-chaves referentes a sua página. Essas são importantes justamente por
-            identificar o site aos buscadores, ajudando no SEO (Search Engine Optimization). O Google não utiliza somente as metas para
-            realizar suas buscas, mas elas são uma parte importante.
-          </p>
+        <div>
+          <h2>Tags HTML e seus Significados</h2>
           <ul>
-            <li><strong>description:</strong> guarda a descrição do site, utilizado nos motores de busca.</li>
-            <li><strong>keywords:</strong> palavras chaves relacionadas ao site, utilizada nos primórdios pelos motores de busca.</li>
-            <li><strong>author:</strong> identifica o autor do site</li>
+            <li><strong>&lt;!DOCTYPE&gt;:</strong> define o tipo de documento</li>
+            <li><strong>&lt;html&gt;:</strong> define o início do documento HTML, todas as demais tags devem estar dentro desta tag</li>
+            <li><strong>&lt;head&gt;:</strong> cabeçalho onde ficam os metadados do documento, como meta tags, CSS e JavaScript</li>
             <li>
-              <strong>robots:</strong> ajuda os robôs dos motores de busca a indexar ou não um site. Com esta opção podemos dizer se uma
-              determinada página do site não deve ser mostrada nos resultados de uma busca.
+              <strong>&lt;title&gt;:</strong> define o título do documento, mostrado na barra de títulos do navegador e como link nos
+              mecanismos de busca
+            </li>
+            <li><strong> &lt;base&gt;:</strong> define a URL base do documento</li>
+            <li><strong> &lt;link&gt;:</strong> utilizado para linkar um arquivo de imagem ou CSS à página HTML</li>
+            <li><strong> &lt;script&gt;:</strong> utilizado para escrever ou anexar um arquivo normalmente JavaScript à página</li>
+            <li><strong> &lt;meta&gt;:</strong> meta tags, como charset, description, viewport ou keywords</li>
+            <li><strong> &lt;style&gt;:</strong> utilizada para adicionar um código CSS à página</li>
+            <li><strong> &lt;body&gt;:</strong> corpo ou área principal do documento, dentro deste deve ficar o conteúdo da sua página</li>
+            <li>
+              <strong> &lt;header&gt;: </strong>define um cabeçalho da página ou de uma seção, normalmente pode conter um menu (nav), um
+              logo ou link
+            </li>
+            <li><strong> &lt;nav&gt;: </strong>define uma área de navegação contendo links, para a formação de menus com hiperlinks</li>
+            <li><strong> &lt;footer&gt;:</strong> define o rodapé de uma página ou seção</li>
+            <li>
+              <strong> &lt;main&gt;:</strong> define o conteúdo principal da página, deve ser utilizado apenas uma única vez em cada página
+            </li>
+            <li><strong> &lt;section&gt;:</strong> define uma seção do documento</li>
+            <li><strong> &lt;article&gt;:</strong> pode ser um post ou notícia de um fórum ou blog, define um conteúdo independente</li>
+            <li><strong> &lt;h1&gt; a &lt;h6&gt;: </strong> representam 6 níveis de títulos, sendo o &lt;h1&gt; de maior importância</li>
+            <li><strong> &lt;p&gt;:</strong> define um parágrafo</li>
+            <li><strong> &lt;br&gt;: </strong>define uma quebra de linha</li>
+            <li><strong> &lt;div&gt;: </strong>define uma camada sem formatação, genérico</li>
+            <li><strong> &lt;ul&gt;: </strong>define uma lista não ordenada</li>
+            <li><strong> &lt;li&gt;: </strong>define um elemento ou item da lista não ordenada</li>
+            <li><strong> &lt;a&gt;: </strong>define um link que deve ser apontado com o atributo href</li>
+            <li>
+              <strong> &lt;img&gt;: </strong>define a utilização de uma imagem (JPG, GIF, PNG e outras). A imagem deve ser apontada com o
+              uso do atributo src
+            </li>
+            <li><strong> &lt;strong&gt;:</strong> apesar de deixar em negrito, representa a importância deste texto no meio da frase</li>
+            <li><strong> &lt;span&gt;:</strong> utilizado para definir pequenos trechos de textos</li>
+            <li>
+              <strong> &lt;pre&gt;:</strong>exibe o texto exatamente da forma que foi digitado, incluindo tabulações, espaços e enters
             </li>
           </ul>
-          <span>Exemplo de código:</span>
-          <pre>
+        </div>
+        <div class="html-container">
+          <h3>Conhecendo os elementos semânticos do HTML5</h3>
+          <div class="content">
+            <div class="html-semantic">
+              <h1>
+                <code><strong> &lt;meta&gt;</strong> </code>
+              </h1>
+              <p class="tag">
+                A <strong>&lt;meta&gt;</strong> ajuda o seu site a descrever seu conteúdo aos buscadores, como o Google. Aqui você poderá
+                dizer qual a codificação (charset), descrição e até palavras-chaves referentes a sua página. Essas são importantes
+                justamente por identificar o site aos buscadores, ajudando no SEO (Search Engine Optimization). O Google não utiliza somente
+                as metas para realizar suas buscas, mas elas são uma parte importante.
+              </p>
+              <ul>
+                <li><strong>description:</strong> guarda a descrição do site, utilizado nos motores de busca.</li>
+                <li><strong>keywords:</strong> palavras chaves relacionadas ao site, utilizada nos primórdios pelos motores de busca.</li>
+                <li><strong>author:</strong> identifica o autor do site</li>
+                <li>
+                  <strong>robots:</strong> ajuda os robôs dos motores de busca a indexar ou não um site. Com esta opção podemos dizer se uma
+                  determinada página do site não deve ser mostrada nos resultados de uma busca.
+                </li>
+              </ul>
+              <span>Exemplo de código:</span>
+              <pre>
     <code>
       &lt;head&gt;
       &lt;title&gt;Página do Burnes - Home &lt;/title&gt;
@@ -129,18 +139,18 @@
       &lt;/head&gt;
     </code>
   </pre>
-        </div>
-        <div class="html-semantic">
-          <h1>
-            <code><strong>&lt;nav&gt; </strong> </code>
-          </h1>
-          <p class="tag">
-            O elemento<code><strong> &lt;nav&gt; </strong></code> representa um menu de navegação na sua página. Normalmente é o primeiro
-            elemento da nossa página, mas independentemente da posição que você escolher para a sua navbar é boa prática envolver o
-            agrupamento de links com esta tag.
-          </p>
-          <span>Exemplo de código:</span>
-          <pre>
+            </div>
+            <div class="html-semantic">
+              <h1>
+                <code><strong>&lt;nav&gt; </strong> </code>
+              </h1>
+              <p class="tag">
+                O elemento<code><strong> &lt;nav&gt; </strong></code> representa um menu de navegação na sua página. Normalmente é o
+                primeiro elemento da nossa página, mas independentemente da posição que você escolher para a sua navbar é boa prática
+                envolver o agrupamento de links com esta tag.
+              </p>
+              <span>Exemplo de código:</span>
+              <pre>
     <code>
       &lt;nav&gt;
       &lt;ul&gt;
@@ -152,20 +162,20 @@
       &lt;/nav&gt;
     </code>
   </pre>
-        </div>
-        <div class="html-semantic">
-          <h1>
-            <code><strong> &lt;section&gt;</strong> </code>
-          </h1>
-          <p class="tag">
-            O elemento <code><strong>&lt;section&gt;</strong> </code> representa uma seção dentro de um documento e geralmente contém um
-            título, o qual é definido por meio de um dos elementos entre<code> <strong>&lt;h1&gt;</strong></code> e
-            <code><strong>&lt;h6&gt;</strong></code
-            >. Podemos utilizar o <code><strong>&lt;section&gt;</strong> </code>, por exemplo, para descrever as seções/tópicos de um
-            documento.
-          </p>
-          <span>Exemplo de código:</span>
-          <pre>
+            </div>
+            <div class="html-semantic">
+              <h1>
+                <code><strong> &lt;section&gt;</strong> </code>
+              </h1>
+              <p class="tag">
+                O elemento <code><strong>&lt;section&gt;</strong> </code> representa uma seção dentro de um documento e geralmente contém um
+                título, o qual é definido por meio de um dos elementos entre<code> <strong>&lt;h1&gt;</strong></code> e
+                <code><strong>&lt;h6&gt;</strong></code
+                >. Podemos utilizar o <code><strong>&lt;section&gt;</strong> </code>, por exemplo, para descrever as seções/tópicos de um
+                documento.
+              </p>
+              <span>Exemplo de código:</span>
+              <pre>
     <code>
       &lt;section&gt;
        &lt;h3&gt; Seção 1 &lt;/h3&gt;
@@ -175,31 +185,31 @@
       &lt;/section&gt;
     </code>
   </pre>
-        </div>
-        <div class="html-semantic">
-          <h1>
-            <code><strong> &lt;iframe&gt;</strong> </code>
-          </h1>
-          <p class="tag">
-            O elemento HTML &lt;iframe&gt; representa um contexto de navegação aninhado, incorporando outra página HTML na atual. iFrame é a
-            abreviação de Inline Frame. É um elemento poderoso quando se trata de web design. Você provavelmente já viu diversos vídeos do
-            YouTube que estavam incorporados em outros sites. Para além disso, um iFrame pode inserir todo tipo de mídia.
-          </p>
-          <div class="atributs">
-            <span>Atributos:</span>
-            <ul>
-              <li>
-                O iFrame source (src) é a origem do conteúdo, seja do servidor interno o externo. Não se esqueça de incorporar o código na
-                url.
-              </li>
-              <li>
-                Width (largura) e height (altura) são os aspectos visuais. Você pode inserir uma medida fixa como 680×480 pixels (px) no
-                exemplo. Ou, você pode usar o método de porcentagem (10%-100%) na qual o conteúdo será ajustado automaticamente.
-              </li>
-            </ul>
-          </div>
-          <span>Exemplo de código:</span>
-          <pre>
+            </div>
+            <div class="html-semantic">
+              <h1>
+                <code><strong> &lt;iframe&gt;</strong> </code>
+              </h1>
+              <p class="tag">
+                O elemento HTML &lt;iframe&gt; representa um contexto de navegação aninhado, incorporando outra página HTML na atual. iFrame
+                é a abreviação de Inline Frame. É um elemento poderoso quando se trata de web design. Você provavelmente já viu diversos
+                vídeos do YouTube que estavam incorporados em outros sites. Para além disso, um iFrame pode inserir todo tipo de mídia.
+              </p>
+              <div class="atributs">
+                <span>Atributos:</span>
+                <ul>
+                  <li>
+                    O iFrame source (src) é a origem do conteúdo, seja do servidor interno o externo. Não se esqueça de incorporar o código
+                    na url.
+                  </li>
+                  <li>
+                    Width (largura) e height (altura) são os aspectos visuais. Você pode inserir uma medida fixa como 680×480 pixels (px) no
+                    exemplo. Ou, você pode usar o método de porcentagem (10%-100%) na qual o conteúdo será ajustado automaticamente.
+                  </li>
+                </ul>
+              </div>
+              <span>Exemplo de código:</span>
+              <pre>
     <code>
       &lt;iframe&gt;
        id="inlineFrameExample"
@@ -210,51 +220,55 @@
       &lt;/iframe&gt;
     </code>
 </pre>
+            </div>
+          </div>
         </div>
-        <iframe
-          width="300"
-          src="https://www.youtube.com/embed/GWULnkTnapM?si=BkYlaNRIjS9kUP8E"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        >
-          algo deu errado
-          <a href="https://www.youtube.com/embed/GWULnkTnapM?si=BkYlaNRIjS9kUP8E">clique aqui!</a>
-        </iframe>
-
-        <div class="list-of-videos">
-          <div class="video">
-            <a href="https://www.youtube.com/embed/eAxGt3ObQ24?si=dSLrKu7XBiV7x2PI" target="iframe-video">Configurando iframes </a>
-          </div>
-          <div class="video">
-            <a href="https://www.youtube.com/embed/G8H5jhabq8k?si=UwSCEDETAYk8E7P1" target="iframe-video">Conteúdo local no iframe </a>
-          </div>
-          <div class="video">
-            <a href="https://www.youtube.com/embed/y6CKgnBYs5E?si=MyMZsqL_fEvW3CJ_" target="iframe-video">Navegação no iframe</a>
+      </div>
+      <div class="iframes">
+        <div class="videos">
+          <div class="list-of-videos">
+            <div class="video">
+              <a href="https://www.youtube.com/embed/eAxGt3ObQ24?si=dSLrKu7XBiV7x2PI" target="iframe-video">Configurando iframes </a>
+            </div>
+            <div class="video">
+              <a href="https://www.youtube.com/embed/G8H5jhabq8k?si=UwSCEDETAYk8E7P1" target="iframe-video">Conteúdo local no iframe </a>
+            </div>
+            <div class="video">
+              <a href="https://www.youtube.com/embed/y6CKgnBYs5E?si=MyMZsqL_fEvW3CJ_" target="iframe-video">Navegação no iframe</a>
+            </div>
+            <iframe
+              width="300"
+              src="https://www.youtube.com/embed/y6CKgnBYs5E?si=MyMZsqL_fEvW3CJ_"
+              title="YouTube video player"
+              name="iframe-video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              algo deu errado <a href="https://www.youtube.com/embed/y6CKgnBYs5E?si=MyMZsqL_fEvW3CJ_">clique aqui!</a></iframe
+            >
           </div>
           <iframe
             width="300"
-            src="https://www.youtube.com/embed/y6CKgnBYs5E?si=MyMZsqL_fEvW3CJ_"
+            src="https://www.youtube.com/embed/GWULnkTnapM?si=BkYlaNRIjS9kUP8E"
             title="YouTube video player"
-            name="iframe-video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           >
-            algo deu errado <a href="https://www.youtube.com/embed/y6CKgnBYs5E?si=MyMZsqL_fEvW3CJ_">clique aqui!</a></iframe
-          >
+            algo deu errado
+            <a href="https://www.youtube.com/embed/GWULnkTnapM?si=BkYlaNRIjS9kUP8E">clique aqui!</a>
+          </iframe>
         </div>
+        <iframe
+          title="google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120048.59789749596!2d-44.046451038723404!3d-19.902535918350363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20State%20of%20Minas%20Gerais!5e0!3m2!1sen!2sbr!4v1708089976757!5m2!1sen!2sbr"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-
-      <iframe
-        title="google-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120048.59789749596!2d-44.046451038723404!3d-19.902535918350363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20State%20of%20Minas%20Gerais!5e0!3m2!1sen!2sbr!4v1708089976757!5m2!1sen!2sbr"
-        width="400"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
     </main>
 
     <footer>
