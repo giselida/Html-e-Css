@@ -71,11 +71,12 @@ O intuito deste projeto é explicar o HTML semântico e CSS
 
 | :page_facing_up: |
 | :--------------: |
-|   Mobile First   |
 |    HTML Class    |
 |    CSS Class     |
 |    CSS properties     |
+|    CSS Selectors    |
 | Pseudo elements  |
+| Pseudo classes  |
 | Size Properties  |
 |     Flex-box     |
 

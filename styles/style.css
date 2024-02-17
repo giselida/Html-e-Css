@@ -2,15 +2,15 @@
   --color-white: #ffffff;
   --color-yellow: #d3dd1f;
   --color-gray-light: #d8d8d8;
-  --color-black: black;
-  --color-black: black;
+  --color-pink: #ed06fa;
+  --color-black: #000000;
 }
 ::selection {
-  color: rgb(237, 6, 250);
-  background-color: rgb(0, 0, 0);
+  color: var(--color-pink);
+  background-color: var(--color-black);
 }
-a::before {
-  content: "→";
+a:active {
+  color: var(--color-pink);
 }
 html {
   background-color: var(--color-gray-light);
@@ -37,6 +37,7 @@ header {
   background-color: var(--color-white);
   min-height: 40px;
 }
+
 header .material-symbols-outlined {
   cursor: pointer;
 }
@@ -59,7 +60,7 @@ nav ul li:hover {
   color: var(--color-yellow);
 }
 nav ul li::marker {
-  content: "💗 ";
+  content: "💗";
 }
 
 article {
@@ -103,18 +104,29 @@ main h1 {
   border-radius: 10px;
   margin-bottom: 10px;
 }
-pre{
-    background-color: var(--color-gray-light);
+.tags-meaning {
+  display: flex;
+  flex-direction: column;
+}
+pre {
+  background-color: var(--color-gray-light);
 }
 .iframes {
   display: flex;
-  align-items: center;
+  align-items: end;
+  justify-content: flex-start;
+  width: 100%;
 }
 .videos {
   flex-direction: column;
   gap: 10px;
-  width: 100%;
   margin-top: 10px;
+}
+.video a::before {
+  content: "→";
+}
+.list-of-videos span::after {
+  content: "↓";
 }
 .videos iframe {
   width: 600px;
@@ -124,4 +136,7 @@ footer {
   justify-content: space-between;
   width: 100%;
   min-height: 40px;
+}
+footer span a::after {
+  content: "←";
 }
