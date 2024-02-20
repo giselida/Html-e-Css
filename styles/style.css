@@ -15,22 +15,24 @@ a:active {
 }
 html {
   background-color: var(--color-gray-light);
-}
-input[type="checkbox"] {
-  display: none;
+
+  body:has(#html:checked) .card:not(.card-css) {
+    display: flex;
+  }
+
+  body:has(#css:checked) .card-css {
+    display: flex;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input[type="checkbox"] {
+      display: none;
+    }
+  }
 }
 
-body:has(#html:checked) .card:not(.card-css) {
-  display: flex !important;
-}
-body:has(#css:checked) .card-css {
-  display: flex !important;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 header {
   display: flex;
   align-items: center;
@@ -38,45 +40,47 @@ header {
   background-color: var(--color-white);
   min-height: 30px;
   padding: 10px;
+  .material-symbols-outlined {
+    cursor: pointer;
+  }
+}
+body:has(#side-nav:checked) nav {
+  transform: translateX(0);
+}
+body:has(#side-nav:checked) main {
+  margin-left: 250px;
 }
 
-header .material-symbols-outlined {
-  cursor: pointer;
-}
 nav {
-  display: flex;
-  align-self: center;
-  width: 80%;
-  background-color: var(--color-white);
-  border-radius: 10px;
-  margin-top: 10px;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  width: 100%;
-}
-nav ul li label {
-  color: #000;
-}
-nav ul label:hover {
-  cursor: pointer;
-  color: var(--color-yellow);
-}
-nav ul li::marker {
-  content: "💗 ";
-}
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  overflow-y: auto;
   height: 100%;
-  max-height: 772px;
-  min-height: 772px;
-  margin-top: 10px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  transform: translateX(-250px);
+  transition: transform 0.6s ease-in-out;
+  background: var(--color-white);
+  top: 50px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    li {
+      &::marker {
+        content: "💗 ";
+      }
+      label {
+        color: #000;
+        &:hover {
+          cursor: pointer;
+          color: var(--color-yellow);
+        }
+      }
+    }
+  }
 }
+
 main::-webkit-scrollbar-thumb {
   background: #000;
 }
@@ -84,87 +88,109 @@ main::-webkit-scrollbar {
   background: #9e9c9e;
   width: 8px;
 }
-main .card {
-  display: none;
-  flex-direction: column;
-}
-main .card-css {
-  margin-top: 20px;
-  display: none;
-  flex-direction: column;
-}
 
-.card article {
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  height: 100%;
+  max-height: 830px;
+  min-height: 772px;
   margin-top: 10px;
-  align-self: center;
+  transition: margin-left 0.6s ease-in-out;
+  .card {
+    display: none;
+    flex-direction: column;
+  }
+  .card-css {
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+  }
 }
-.card figure img {
-  width: 100%;
-  border-radius: 10px;
-}
-.card h1 {
-  align-self: flex-start;
-  margin-bottom: 10px;
-}
-.card details summary:hover {
+details summary:hover {
   font-weight: 700;
   cursor: pointer;
 }
 
-.html-container h3 {
-  font-size: 25px;
-}
-.html-container .content {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 10px;
-  margin-top: 10px;
+.card {
+  article {
+    margin-top: 10px;
+    align-self: center;
+    figure img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  h1 {
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+  .html-container {
+    .content {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 10px;
+      margin-top: 10px;
+      .html-semantic {
+        background-color: var(--color-white);
+        padding: 10px;
+        border-radius: 10px;
+        .code-exemple {
+          width: 100%;
+          margin-top: 10px;
+          pre {
+            background-color: #eee;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 3px;
+            white-space: pre-line;
+          }
+        }
+      }
+    }
+  }
 }
 
-.html-container .content .html-semantic {
-  background-color: var(--color-white);
-  padding: 10px;
-  border-radius: 10px;
-}
 .introduction {
   background-color: var(--color-white);
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
+  p {
+    margin-bottom: 10px;
+  }
 }
-.introduction p {
-  margin-bottom: 10px;
-}
-.code-exemple {
-  width: 100%;
-  margin-top: 10px;
-}
-pre {
-  background-color: #eee;
-  border-radius: 3px;
-  font-family: courier, monospace;
-  padding: 0 3px;
-  white-space: pre-line;
-}
+
 .iframes {
   display: flex;
   align-items: end;
   margin-top: 20px;
-}
-.videos {
-  gap: 10px;
-}
-.video:nth-child(2) {
-  margin-top: 20px;
-}
-.video:nth-child(4) {
-  margin-bottom: 20px;
-}
-.video a::before {
-  content: "→";
-}
-.list-of-videos span::after {
-  content: "↓";
+  .videos {
+    gap: 10px;
+  }
+  .list-of-videos {
+    span {
+      &::after {
+        content: "↓";
+      }
+    }
+    .video {
+      a {
+        &::before {
+          content: "→";
+        }
+      }
+      &:nth-child(2) {
+        margin-top: 20px;
+      }
+      &:nth-child(4) {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 footer {
@@ -175,14 +201,24 @@ footer {
   min-height: 80px;
   margin-top: 10px;
   padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .information {
+    display: flex;
+    flex-direction: column;
+  }
+  .links {
+    span {
+      a {
+        &::after {
+          content: "←";
+        }
+      }
+    }
+  }
 }
-footer .information {
-  display: flex;
-  flex-direction: column;
-}
-footer span a::after {
-  content: "←";
-}
+
 @media (max-width: 800px) {
   .html-container .content {
     display: flex;
