@@ -9,6 +9,7 @@
   color: var(--color-pink);
   background-color: var(--color-black);
 }
+
 a:active {
   color: var(--color-pink);
 }
@@ -63,11 +64,9 @@ nav ul label:hover {
   cursor: pointer;
   color: var(--color-yellow);
 }
-
 nav ul li::marker {
   content: "💗 ";
 }
-
 main {
   display: flex;
   flex-direction: column;
@@ -77,6 +76,13 @@ main {
   max-height: 772px;
   min-height: 772px;
   margin-top: 10px;
+}
+main::-webkit-scrollbar-thumb {
+  background: #000;
+}
+main::-webkit-scrollbar {
+  background: #9e9c9e;
+  width: 8px;
 }
 main .card {
   display: none;
