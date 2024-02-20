@@ -44,7 +44,7 @@
   
 ---
 
-## :information*source: \_Sobre*
+## :information_source: _Sobre_
 
 <div align="center">
 
@@ -52,7 +52,7 @@ O intuito deste projeto é explicar o HTML semântico e CSS
 
 </div>
 
-## :hammer*and_wrench: \_Tecnologias*
+## :hammer_and_wrench: _Tecnologias_
 
 <div align="center">
 
@@ -74,9 +74,11 @@ O intuito deste projeto é explicar o HTML semântico e CSS
 |    HTML Class    |
 |    CSS Class     |
 |    CSS properties     |
+|    Property value    |
+|    Attribute selector    |
 |    CSS Selectors    |
-| Pseudo elements  |
-| Pseudo classes  |
+| Pseudo-elements  |
+| Pseudo-class  |
 | Size Properties  |
 |     Flex-box     |
 
@@ -103,7 +105,7 @@ Desenvolvido com ❤️ por Gisélida Cristine de Melo 👋🏽 Meus Contatos!
 
 ---
 
-## :balance*scale: \_Licença*
+## :balance_scale: _Licença_
 
 <div align="center">
 
