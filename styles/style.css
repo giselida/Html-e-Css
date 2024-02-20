@@ -23,6 +23,21 @@ html {
   body:has(#css:checked) .card-css {
     display: flex;
   }
+  body:has(#html:checked) .content-html {
+    color: darkred;
+    font-weight: bold;
+  }
+
+  body:has(#css:checked) .content-css {
+    color: darkred;
+    font-weight: bold;
+  }
+  body:has(#side-nav:checked) nav {
+    transform: translateX(0);
+  }
+  body:has(#side-nav:checked) main {
+    margin-left: 250px;
+  }
   body {
     display: flex;
     flex-direction: column;
@@ -40,15 +55,11 @@ header {
   background-color: var(--color-white);
   min-height: 30px;
   padding: 10px;
+  z-index: 1;
+  border-bottom: 1px solid var(--color-black);
   .material-symbols-outlined {
     cursor: pointer;
   }
-}
-body:has(#side-nav:checked) nav {
-  transform: translateX(0);
-}
-body:has(#side-nav:checked) main {
-  margin-left: 250px;
 }
 
 nav {
@@ -82,10 +93,10 @@ nav {
 }
 
 main::-webkit-scrollbar-thumb {
-  background: #000;
+  background: var(--color-black);
 }
 main::-webkit-scrollbar {
-  background: #9e9c9e;
+  background: var(--color-gray-light);
   width: 8px;
 }
 
@@ -94,11 +105,10 @@ main {
   flex-direction: column;
   padding: 10px;
   overflow-y: auto;
-  height: 100%;
-  max-height: 830px;
-  min-height: 772px;
+  height: calc(100vh - 200px);
   margin-top: 10px;
   transition: margin-left 0.6s ease-in-out;
+  margin-bottom: 80px;
   .card {
     display: none;
     flex-direction: column;
