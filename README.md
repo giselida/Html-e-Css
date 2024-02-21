@@ -71,6 +71,7 @@ O intuito deste projeto é explicar o HTML semântico e CSS
 
 | :page_facing_up: |
 | :--------------: |
+|   First Mobile    |
 |    HTML Class    |
 |    CSS Class     |
 |    CSS properties     |

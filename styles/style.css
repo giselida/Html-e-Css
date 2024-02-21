@@ -2,10 +2,33 @@
   --color-white: #ffffff;
   --color-yellow: #d3dd1f;
   --color-gray-light: #d8d8d8;
+  --color-gray: #808080;
   --color-pink: #ed06fa;
   --color-black: #000000;
   --color-red-dark: #8b0000;
+  --gradient-color-gray: #e6e9f0;
+  --gradient-color-gray-light: #eef1f5;
+  --gradient-color-blue-light: #93a5cf;
+  --gradient-color-green-light: #e4efe9;
 }
+
+:root:has(#dark-mode-toggle:checked) {
+  /* Cores principais */
+  --color-white: #1a1a1a;
+  --color-yellow: #d3dd1f;
+  --color-gray-light: #555555;
+  --color-gray: #aaa;
+  --color-pink: #ed06fa;
+  --color-black: #ffffff;
+  --color-red-dark: #8b0000;
+
+  /* Gradientes  */
+  --gradient-color-gray: #292b2f;
+  --gradient-color-gray-light: #1f2124;
+  --gradient-color-blue-light: #bdc3c7;
+  --gradient-color-green-light: #2c3e50;
+}
+
 ::selection {
   color: var(--color-pink);
   background-color: var(--color-black);
@@ -18,9 +41,9 @@ a[href^="mailto"]::before {
   content: "📧 ";
 }
 details {
-  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-
-  border: 1px solid #aaa;
+  background: linear-gradient(to top, var(--gradient-color-gray) 0%, var(--gradient-color-gray-light) 100%);
+  color: var(--color-black);
+  border: 1px solid var(--color-gray);
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
@@ -32,7 +55,15 @@ details {
 }
 
 html {
-  background: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  background: linear-gradient(45deg, var(--gradient-color-blue-light) 0%, var(--gradient-color-green-light) 100%);
+  body:has(#dark-mode-toggle:checked) {
+    .dark {
+      display: flex;
+    }
+    .light {
+      display: none;
+    }
+  }
 
   body:has(#css:checked) {
     .card-css {
@@ -74,13 +105,15 @@ html {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--color-white);
   min-height: 30px;
   padding: 10px;
   z-index: 1;
   border-bottom: 1px solid var(--color-black);
-  h1 {
-    margin: 0 auto;
+  color: var(--color-black);
+  .dark {
+    display: none;
   }
   .material-symbols-outlined {
     cursor: pointer;
@@ -107,7 +140,7 @@ nav {
         content: "💗 ";
       }
       label {
-        color: #000;
+        color: var(--color-black);
         &:hover {
           cursor: pointer;
           color: var(--color-yellow);
@@ -188,6 +221,7 @@ pre {
   font-family: courier, monospace;
   padding: 0 3px;
   white-space: pre-line;
+  color: var(--color-gray);
 }
 .introduction {
   margin-top: 10px;
@@ -233,6 +267,8 @@ footer {
   align-items: center;
   justify-content: space-between;
   background-color: var(--color-white);
+  border-top: 1px solid var(--color-black);
+  color: var(--color-black);
   min-height: 80px;
   margin-top: 10px;
   padding: 10px;

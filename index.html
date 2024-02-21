@@ -19,6 +19,12 @@
         <span class="material-symbols-outlined"> home </span>
       </label>
       <h1>HTML SEMÂNTICO E CSS</h1>
+
+      <input id="dark-mode-toggle" type="checkbox" />
+      <label for="dark-mode-toggle">
+        <span class="material-symbols-outlined light"> light_mode </span>
+        <span class="material-symbols-outlined dark"> dark_mode </span>
+      </label>
     </header>
     <nav>
       <ul>
@@ -99,7 +105,9 @@
             <li><strong> &lt;br&gt;: </strong>define uma quebra de linha</li>
             <li><strong> &lt;div&gt;: </strong>define uma camada sem formatação, genérico</li>
             <li><strong> &lt;ul&gt;: </strong>define uma lista não ordenada</li>
-            <li><strong> &lt;li&gt;: </strong>define um elemento ou item da lista não ordenada</li>
+            <li>
+              <strong> &lt;li&gt;: </strong>define um elemento ou item de uma <strong> &lt;ul&gt; </strong> ou <strong> &lt;ol&gt; </strong>
+            </li>
             <li><strong> &lt;a&gt;: </strong>define um link que deve ser apontado com o atributo href</li>
             <li>
               <strong> &lt;img&gt;: </strong>define a utilização de uma imagem (JPG, GIF, PNG e outras). A imagem deve ser apontada com o
@@ -217,12 +225,13 @@
                   <span>Atributos:</span>
                   <ul>
                     <li>
-                      O iFrame source (src) é a origem do conteúdo, seja do servidor interno o externo. Não se esqueça de incorporar o
-                      código na url.
+                      O <strong>iFrame source (src)</strong> é a origem do conteúdo, seja do servidor interno o externo. Não se esqueça de
+                      incorporar o código na url.
                     </li>
                     <li>
-                      Width (largura) e height (altura) são os aspectos visuais. Você pode inserir uma medida fixa como 680×480 pixels (px)
-                      no exemplo. Ou, você pode usar o método de porcentagem (10%-100%) na qual o conteúdo será ajustado automaticamente.
+                      <strong> Width (largura)</strong> e <strong> height (altura)</strong> são os aspectos visuais. Você pode inserir uma
+                      medida fixa como 680×480 pixels (px) no exemplo. Ou, você pode usar o método de porcentagem (10%-100%) na qual o
+                      conteúdo será ajustado automaticamente.
                     </li>
                   </ul>
                 </div>
@@ -381,7 +390,7 @@
             <time datetime="2024-02-15">15/02/2024</time>
           </span>
           <span
-            ><strong>hora:</strong>
+            ><strong>Hora:</strong>
             <time datetime="14:00">14:00</time>
           </span>
         </div>
