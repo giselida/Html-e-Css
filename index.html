@@ -19,7 +19,6 @@
         <span class="material-symbols-outlined"> home </span>
       </label>
       <h1>HTML SEMÂNTICO E CSS</h1>
-      <span class="material-symbols-outlined"> logout </span>
     </header>
     <nav>
       <ul>
@@ -43,7 +42,7 @@
         <h1>HTML Semântico</h1>
         <details open>
           <summary>Semântica</summary>
-          <div class="introduction">
+          <div class="introduction" style="background-color: transparent">
             <p>
               Na <strong>programação</strong>, a Semântica refere-se ao significado de um pedaço de código - por exemplo
               <em>"que efeito tem a execução daquela linha de JavaScript?"</em> ou
@@ -69,8 +68,8 @@
           </div>
         </details>
         <details>
-          <summary>Tags HTML e seus Significados</summary>
-          <ul>
+          <summary>Algumas tags HTML e seus Significados</summary>
+          <ol class="tags-html">
             <li><strong>&lt;!DOCTYPE&gt;:</strong> define o tipo de documento</li>
             <li><strong>&lt;html&gt;:</strong> define o início do documento HTML, todas as demais tags devem estar dentro desta tag</li>
             <li><strong>&lt;head&gt;:</strong> cabeçalho onde ficam os metadados do documento, como meta tags, CSS e JavaScript</li>
@@ -111,7 +110,7 @@
             <li>
               <strong> &lt;pre&gt;:</strong>exibe o texto exatamente da forma que foi digitado, incluindo tabulações, espaços e enters
             </li>
-          </ul>
+          </ol>
         </details>
         <details>
           <summary>Conhecendo os elementos semânticos do HTML5</summary>
@@ -127,7 +126,7 @@
                   justamente por identificar o site aos buscadores, ajudando no SEO (Search Engine Optimization). O Google não utiliza
                   somente as metas para realizar suas buscas, mas elas são uma parte importante.
                 </p>
-                <ul>
+                <ol>
                   <li><strong>description:</strong> guarda a descrição do site, utilizado nos motores de busca.</li>
                   <li><strong>keywords:</strong> palavras chaves relacionadas ao site, utilizada nos primórdios pelos motores de busca.</li>
                   <li><strong>author:</strong> identifica o autor do site</li>
@@ -135,7 +134,7 @@
                     <strong>robots:</strong> ajuda os robôs dos motores de busca a indexar ou não um site. Com esta opção podemos dizer se
                     uma determinada página do site não deve ser mostrada nos resultados de uma busca.
                   </li>
-                </ul>
+                </ol>
                 <div class="code-exemple">
                   <span>Exemplo de código:</span>
                   <pre>
@@ -242,6 +241,36 @@
 </pre>
                 </div>
               </div>
+              <div class="html-semantic">
+                <h1>
+                  <code><strong> &lt;a&gt;</strong> </code>
+                </h1>
+                <p class="tag">
+                  O elemento HTML <code><strong> &lt;a&gt;</strong> </code> (ou elemento âncora), com seu atributo href, cria um hiperlink
+                  para páginas da web, arquivos, endereços de e-mail, locais na mesma página ou qualquer outra coisa que uma URL possa
+                  endereçar.
+                </p>
+
+                <div class="code-exemple">
+                  <span>Exemplo de código:</span>
+                  <pre>
+    <code>
+      &lt;p&gt;You can reach Michael at:&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+       &lt;a 
+       href="https://example.com"&gt;
+       Website
+       &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+       &lt;a href="tel:+123456789" &gt;Phone&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+    </code>
+</pre>
+                </div>
+              </div>
             </div>
           </div>
         </details>
@@ -306,17 +335,17 @@
         <h1>CSS</h1>
         <details open>
           <summary>O que é CSS?</summary>
+          <p>
+            CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo (en-US) usada para descrever a
+            apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS
+            descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.
+          </p>
+          <p>
+            CSS (Cascading Style Sheets) é o código que estiliza o conteúdo da web. Noções básicas de CSS explicam o que você precisa para
+            começar. Responderemos perguntas como: Como faço para deixar o texto vermelho? Como faço para exibir o conteúdo em um
+            determinado local no layout (página da web)? Como posso decorar minha página da web com imagens e cores de fundo? ​
+          </p>
           <div class="introduction">
-            <p>
-              CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo (en-US) usada para descrever a
-              apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS
-              descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.
-            </p>
-            <p>
-              CSS (Cascading Style Sheets) é o código que estiliza o conteúdo da web. Noções básicas de CSS explicam o que você precisa para
-              começar. Responderemos perguntas como: Como faço para deixar o texto vermelho? Como faço para exibir o conteúdo em um
-              determinado local no layout (página da web)? Como posso decorar minha página da web com imagens e cores de fundo? ​
-            </p>
             <p>
               Assim como o HTML, o CSS não é uma linguagem de programação. Também não é uma linguagem de marcação. CSS é uma linguagem de
               folha de estilos. CSS é o que você usa para estilizar elementos HTML seletivamente. Por exemplo, este CSS seleciona o texto do
@@ -327,7 +356,6 @@
               <li>A propriedade CSS font-family define a fonte a ser usada.</li>
               <li>A propriedade CSS font-size define o tamanho do texto a ser usado.</li>
             </ul>
-
             <div class="code-exemple">
               <span>Exemplo:</span>
               <pre>
@@ -360,6 +388,7 @@
       </div>
       <div class="links">
         <span><strong> Me conheça de perto</strong> <a href="https://www.linkedin.com/in/giselida-cristine/">clique aqui!</a> </span>
+        <address><a href="mailto:jim@example.com">giselidac@gmail.com </a><br /></address>
       </div>
     </footer>
   </body>
