@@ -42,7 +42,7 @@
 
 |                            :computer:Desktop                             |                              :iphone: Mobile                               |
 | :----------------------------------------------------------------------: | :------------------------------------------------------------------------: |
-| <kbd><img src=".github/htmml-page.png" alt="Tablet"/></kbd> | <kbd><img src=".github/html-mobile-page.png" alt="Mobile"/></kbd> |
+| <kbd><img src=".github/html-page.png" alt="Tablet"/></kbd> | <kbd><img src=".github/html-mobile-page.png" alt="Mobile"/></kbd> |
 
 </div>
   
