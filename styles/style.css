@@ -1,8 +1,9 @@
 :root {
   /* Cores principais */
   --color-white: #ffffff;
-  --color-yellow: #d3dd1f;
-  --color-gray-light: #d8d8d8;
+  --color-yellow: #cc4d64;
+  --color-gray-dark: #d8d8d8;
+  --color-gray-light: #eee;
   --color-gray: #808080;
   --color-pink: #ed06fa;
   --color-black: #000000;
@@ -17,17 +18,18 @@
 :root:has(#dark-mode-toggle:checked) {
   /* Cores principais */
   --color-white: #1a1a1a;
-  --color-yellow: #d3dd1f;
-  --color-gray-light: #555555;
+  --color-yellow: #cc4d64;
+  --color-gray-dark: #555555;
+  --color-gray-light: #eee;
   --color-gray: #aaa;
   --color-pink: #ed06fa;
   --color-black: #ffffff;
   --color-red-dark: #8b0000;
   /* Gradientes  */
-  --gradient-color-gray: #292b2f;
-  --gradient-color-gray-light: #1f2124;
-  --gradient-color-blue-light: #bdc3c7;
-  --gradient-color-green-light: #2c3e50;
+  --gradient-color-gray: #29323c;
+  --gradient-color-gray-light: #485563;
+  --gradient-color-blue-light: #000000ed;
+  --gradient-color-green-light: #3f3d3d;
 }
 
 ::selection {
@@ -44,14 +46,6 @@ a[href^="mailto"]::before {
 
 html {
   background: linear-gradient(45deg, var(--gradient-color-blue-light) 0%, var(--gradient-color-green-light) 100%);
-  body:has(#dark-mode-toggle:checked) {
-    .dark {
-      display: flex;
-    }
-    .light {
-      display: none;
-    }
-  }
 
   body {
     display: flex;
@@ -60,22 +54,40 @@ html {
     input[type="checkbox"] {
       display: none;
     }
+    details[open] {
+      summary {
+        margin-bottom: 10px;
+      }
+    }
+    &:has(#dark-mode-toggle:checked) {
+      .ball-toggle {
+        transform: translateX(-25px);
+      }
+    }
     &:has(#html:checked) {
       .card:not(.card-css) {
         display: flex;
       }
-      .content-html {
+      label[for="html"] {
         color: var(--color-red-dark);
         font-weight: bold;
+        &:hover {
+          cursor: pointer;
+          color: var(--color-yellow);
+        }
       }
     }
     &:has(#css:checked) {
       .card-css {
         display: flex;
       }
-      .content-css {
+      label[for="css"] {
         color: var(--color-red-dark);
         font-weight: bold;
+        &:hover {
+          cursor: pointer;
+          color: var(--color-yellow);
+        }
       }
     }
     &:has(#side-nav:checked) {
@@ -96,8 +108,28 @@ html {
       z-index: 1;
       border-bottom: 1px solid var(--color-black);
       color: var(--color-black);
-      .dark {
-        display: none;
+      label[for="dark-mode-toggle"] {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border: 1px solid var(--color-black);
+        border-radius: 20px;
+        padding: 5px;
+        position: relative;
+        .ball-toggle {
+          width: 22px;
+          height: 22px;
+          background-color: var(--color-red-dark);
+          border-radius: 50%;
+          position: fixed;
+          cursor: pointer;
+          right: 14px;
+          transition: transform 0.5s ease-in-out;
+        }
+        span {
+          font-size: 20px;
+          cursor: default;
+        }
       }
       .material-symbols-outlined {
         cursor: pointer;
@@ -124,6 +156,7 @@ html {
           }
           label {
             color: var(--color-black);
+            transition: color 0.5s ease-in-out;
             &:hover {
               cursor: pointer;
               color: var(--color-yellow);
@@ -142,7 +175,7 @@ html {
       transition: margin-left 0.6s ease-in-out;
       margin-bottom: 80px;
       &::-webkit-scrollbar {
-        background-color: var(--color-gray-light);
+        background-color: var(--color-gray-dark);
         width: 8px;
       }
       &::-webkit-scrollbar-thumb {
@@ -151,6 +184,18 @@ html {
       .card {
         display: none;
         flex-direction: column;
+        .title {
+          color: var(--color-black);
+        }
+        .introduction {
+          margin-top: 10px;
+          background-color: var(--color-white);
+          padding: 10px;
+          border-radius: 10px;
+          p {
+            margin-bottom: 10px;
+          }
+        }
         article {
           margin-top: 10px;
           align-self: center;
@@ -166,7 +211,7 @@ html {
         }
         pre {
           margin-top: 10px;
-          background-color: #eee;
+          background-color: var(--color-gray-light);
           border-radius: 3px;
           font-family: courier, monospace;
           padding: 0 3px;
@@ -193,15 +238,29 @@ html {
       }
       .card-css {
         margin-top: 20px;
-        display: none;
         flex-direction: column;
-        .introduction {
-          margin-top: 10px;
-          background-color: var(--color-white);
+        .attribute-container {
+          display: flex;
+          flex-direction: column;
           padding: 10px;
-          border-radius: 10px;
-          p {
-            margin-bottom: 10px;
+          gap: 10px;
+          .attributes {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient-color-gray);
+            color: var(--color-white);
+            padding: 10px;
+            border-radius: 10px;
+            .attribute {
+              background-color: var(--color-gray-light);
+              color: black;
+              width: 100%;
+              max-width: 100px;
+              text-align: center;
+              padding: 4px;
+              border-radius: 5px;
+            }
           }
         }
       }
@@ -213,9 +272,11 @@ html {
         padding: 10px;
         margin-bottom: 10px;
 
-        summary:hover {
-          font-weight: 700;
-          cursor: pointer;
+        summary {
+          &:hover {
+            font-weight: 700;
+            cursor: pointer;
+          }
         }
         .tags-html {
           li {
@@ -272,9 +333,15 @@ html {
       .links {
         span {
           a {
+            text-decoration: none;
             &::after {
               content: "←";
             }
+          }
+        }
+        address {
+          a {
+            text-decoration: none;
           }
         }
       }
@@ -289,9 +356,14 @@ html {
   }
   .iframes {
     overflow: scroll;
+    align-items: unset !important;
+    flex-direction: column;
   }
 }
 @media (max-width: 500px) {
+  .attributes {
+    flex-direction: column;
+  }
   footer {
     flex-direction: column;
   }
