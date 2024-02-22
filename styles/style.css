@@ -249,7 +249,7 @@ html {
             align-items: center;
             gap: 10px;
             background: var(--gradient-color-gray);
-            color: var(--color-white);
+            color: var(--color-gray);
             padding: 10px;
             border-radius: 10px;
             .attribute {
