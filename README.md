@@ -52,8 +52,6 @@
 
 <div align="center">
 
-O  deste projeto é explicar o HTML semântico e CSS
-
 O intuito deste artigo é fornecer uma compreensão básica de algumas tags do HTML e a manipulação do CSS,
 
 Vamos explorar exemplos para ilustrar suas aplicações práticas e destacar as melhores práticas para utilizá-los de forma eficaz.
