@@ -52,7 +52,15 @@
 
 <div align="center">
 
-O intuito deste projeto é explicar o HTML semântico e CSS
+O  deste projeto é explicar o HTML semântico e CSS
+
+O intuito deste artigo é fornecer uma compreensão básica de algumas tags do HTML e a manipulação do CSS,
+
+Vamos explorar exemplos para ilustrar suas aplicações práticas e destacar as melhores práticas para utilizá-los de forma eficaz.
+
+Ao final deste artigo, você terá uma base em HTML e CSS, permitindo escrever código mais semânticos, sustentáveis e eficientes em seus projetos de desenvolvimento web.
+
+ Obs:"Todas as iterações deste projeto é constituído em apenas HTML e CSS "
 
 </div>
 
@@ -79,6 +87,7 @@ O intuito deste projeto é explicar o HTML semântico e CSS
 |    HTML Class    |
 |    CSS Class     |
 |    CSS properties     |
+|    CSS functions     |
 |    Property value    |
 |    Attribute selector    |
 |    CSS Selectors    |
@@ -86,6 +95,7 @@ O intuito deste projeto é explicar o HTML semântico e CSS
 | Pseudo-class  |
 | Size Properties  |
 |     Flex-box     |
+|     Flex-grid     |
 
 </div>
 
