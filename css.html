@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="assets/images/html.png" type="image/x-icon" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" name="side-nav" id="side-nav" />
+      <label for="side-nav">
+        <span class="material-symbols-outlined">menu</span>
+      </label>
+      <h1><a href="index.html">HTML e CSS</a></h1>
+      <input id="dark-mode-toggle" type="checkbox" />
+      <label for="dark-mode-toggle">
+        <div class="ball-toggle"></div>
+        <span class="material-symbols-outlined light">light_mode</span>
+        <span class="material-symbols-outlined dark">dark_mode</span>
+      </label>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="card card-css">
+        <article>
+          <figure>
+            <img src="assets/images/css-declaration-small.png" alt="css + html" />
+          </figure>
+        </article>
+        <h1>CSS</h1>
+        <details open>
+          <summary>O que é CSS?</summary>
+          <p>
+            CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo (en-US) usada para descrever a
+            apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS
+            descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.
+          </p>
+          <p>
+            CSS (Cascading Style Sheets) é o código que estiliza o conteúdo da web. Noções básicas de CSS explicam o que você precisa para
+            começar. Responderemos perguntas como: Como faço para deixar o texto vermelho? Como faço para exibir o conteúdo em um
+            determinado local no layout (página da web)? Como posso decorar minha página da web com imagens e cores de fundo? ​
+          </p>
+          <div class="introduction">
+            <p>
+              Assim como o HTML, o CSS não é uma linguagem de programação. Também não é uma linguagem de marcação. CSS é uma linguagem de
+              folha de estilos. CSS é o que você usa para estilizar elementos HTML seletivamente. Por exemplo, este CSS seleciona o texto do
+              parágrafo, definindo a cor como vermelho:
+            </p>
+            <ul>
+              <li>A propriedade CSS <strong>color</strong> define a cor do texto a ser usada.</li>
+              <li>A propriedade CSS <strong>font-family</strong> define a fonte a ser usada.</li>
+              <li>A propriedade CSS <strong>font-size</strong> define o tamanho do texto a ser usado.</li>
+            </ul>
+            <div class="code-exemple">
+              <span>Exemplo:</span>
+              <pre>
+    <code>
+    p {
+       color: blue;
+       font-family: verdana;
+       font-size: 300%;
+      }
+        </code>
+    </pre>
+            </div>
+          </div>
+        </details>
+        <details>
+          <summary>Seletores CSS</summary>
+          <div class="introduction">
+            <p>
+              Os seletores CSS são usados para definir um padrão dos elementos que você deseja selecionar para aplicar um conjunto de regras
+              CSS nos elementos selecionados. Os combinadores definem o relacionamento entre os seletores. Usando vários seletores e
+              combinadores, você pode selecionar e estilizar com precisão os elementos desejados com base em seu tipo, atributos, estado ou
+              relacionamento com outros elementos.
+            </p>
+            <p>
+              Existem mais de 80 seletores e combinadores. Os seletores CSS podem ser agrupados nas seguintes categorias com base no tipo de
+              elementos que podem selecionar.
+            </p>
+            <p>
+              O seletor de tipo seleciona todos os elementos que possuem o nome de nó fornecido. Por exemplo, div selecionará todos os
+              elementos <code><strong>&lt;div&gt;</strong> </code> e input corresponderá a qualquer elemento
+              <code><strong>&lt;input&gt;</strong> </code> . O seletor universal, indicado com um asterisco (*), é um seletor de tipo
+              especial que seleciona todos os elementos.
+            </p>
+            <p>
+              O seletor de classe seleciona todos os elementos que possuem o atributo de classe determinado indicado pelo nome da classe
+              prefixado com um ponto final (.). Por exemplo, <strong>.index </strong>corresponderá a qualquer elemento que possua
+              <strong>class="index"</strong>. O seletor de ID seleciona um elemento com base no valor de seu atributo id. O seletor é o id
+              prefixado com um "sinal numérico" (U+0023, #). Por exemplo, <strong>#toc</strong> corresponderá ao elemento que possui
+              <strong>id="toc"</strong>. Classe e id são atributos globais. Deve haver apenas um elemento com um determinado id em um
+              documento; mas se houver mais de um, o seletor de ID corresponderá a todos os elementos com esse ID.
+            </p>
+            <div class="code-exemple">
+              <span>Exemplo:</span>
+              <pre>
+    <code>
+* {
+  font-style: italic;
+}
+p {
+  color: red;
+}
+.myClass {
+  text-decoration: underline;
+}
+#myId {
+  font-family: monospace;
+}
+p.myClass#myId {
+  font-size: 1.5rem;
+}
+        </code>
+    </pre>
+            </div>
+          </div>
+        </details>
+        <details>
+          <summary>Combinadores e separadores</summary>
+          <ul class="tags-html">
+            <li>
+              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator"
+                >+ (Combinador de próximo irmão)</a
+              >
+            </li>
+            <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator">> (Combinador filho)</a></li>
+            <li>
+              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Column_combinator"
+                >|| (Combinador de colunas) Experimental
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator"
+                >~ (combinador de irmãos subsequente)</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator"
+                >" " (Combinador descendente)</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Namespace_separator">| (Separador de namespace)</a>
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Seletores de atributos</summary>
+          <div class="introduction">
+            <p>
+              O seletor de atributos CSS combina elementos com base no elemento que possui um determinado atributo definido explicitamente,
+              com opções para definir um valor de atributo ou correspondência de valor de substring.
+            </p>
+            <p>
+              Os seletores de atributos selecionam todos os elementos que, dependendo de como o seletor é escrito, possuem o atributo
+              fornecido ou possuem o atributo fornecido com uma correspondência de valor de substring. Por exemplo, [type] corresponderá a
+              todos os elementos que possuem o atributo type definido (para qualquer valor) e [type="submit"] corresponderá a
+              <code><strong>&lt;input type="submit"&gt;</strong> </code> e <code><strong>&lt;button type="submit"&gt;</strong> </code> , ou
+              qualquer elemento com <strong>type="submit"</strong> definido, mesmo que este par atributo-valor seja suportado apenas em
+              elementos<code><strong>&lt;input&gt;</strong> </code> e <code><strong>&lt;button&gt;</strong> </code>. A correspondência não
+              diferencia maiúsculas de minúsculas.
+            </p>
+            <div class="attribute-container">
+              <div class="attributes">
+                <div class="attribute">[attr]</div>
+                <div class="attribute-content">Representa elementos com um nome de atributo attr.</div>
+              </div>
+              <div class="attributes">
+                <div class="attribute">[attr=valor]</div>
+                <div class="attribute-content">Representa elementos com um nome de atributo attr cujo valor é exatamente value.</div>
+              </div>
+              <div class="attributes">
+                <div class="attribute">[attr~=valor]</div>
+                <div class="attribute-content">
+                  Representa elementos com um nome de atributo attr cujo valor é uma lista de palavras separadas por espaços em branco, uma
+                  das quais é exatamente value.
+                </div>
+              </div>
+
+              <div class="attributes">
+                <div class="attribute">[attr|=valor]</div>
+                <div class="attribute-content">
+                  Representa elementos com um nome de atributo attr cujo valor pode ser exatamente valor ou pode começar com valor
+                  imediatamente seguido por um hífen, - (U+002D). É frequentemente usado para correspondências de subcódigos de idioma.
+                </div>
+              </div>
+              <div class="attributes">
+                <div class="attribute">[attr^=valor]</div>
+                <div class="attribute-content">
+                  Representa elementos com um nome de atributo attr cujo valor é prefixado (precedido) por valor.
+                </div>
+              </div>
+              <div class="attributes">
+                <div class="attribute">[attr$=valor]</div>
+                <div class="attribute-content">
+                  Representa elementos com um nome de atributo attr cujo valor é sufixado (seguido) por valor.
+                </div>
+              </div>
+              <div class="attributes">
+                <div class="attribute">[attr*=valor]</div>
+                <div class="attribute-content">
+                  Representa elementos com um nome de atributo attr cujo valor contém pelo menos uma ocorrência de valor na string.
+                </div>
+              </div>
+              <div class="attributes">
+                <div class="attribute">[attr operador e valor i]</div>
+                <div class="attribute-content">
+                  Adicionar um i (ou I) antes do colchete de fechamento faz com que o valor seja comparado sem distinção entre maiúsculas e
+                  minúsculas (para caracteres dentro do intervalo ASCII).
+                </div>
+              </div>
+              <div class="attributes">
+                <div class="attribute">[attr operador e valor s] Experimental</div>
+                <div class="attribute-content">
+                  Adicionar um s (ou S) antes do colchete de fechamento faz com que o valor seja comparado com distinção entre maiúsculas e
+                  minúsculas (para caracteres dentro do intervalo ASCII).
+                </div>
+              </div>
+            </div>
+            <div class="code-exemple">
+              <span>Exemplo:</span>
+              <pre>
+    <code>
+a[title] {
+  color: purple;
+}
+
+a[href="https://example.org"]
+{
+  color: green;
+}
+a[href*="example"] {
+  font-size: 2em;
+}
+a[href$=".org" i] {
+  font-style: italic;
+}
+a[class~="logo"] {
+  padding: 2px;
+}
+        </code>
+    </pre>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>Pseudo-classes e Pseudo-elementos</summary>
+          <div class="introduction">
+            <h1>Pseudo-classes</h1>
+            <p>
+              Uma pseudo-classe CSS é uma palavra-chave adicionada a um seletor que especifica um estado especial do(s) elemento(s)
+              selecionado(s). Por exemplo, a pseudo-classe <strong>:hover</strong> pode ser usada para selecionar um botão quando o ponteiro
+              do usuário passa sobre o botão e esse botão selecionado pode então ser estilizado.
+            </p>
+            <p>
+              Uma pseudo-classe consiste em dois pontos (:) seguidos pelo nome da pseudo-classe (por exemplo, :hover). Uma pseudo-classe
+              funcional também contém um par de parênteses para definir os argumentos (por exemplo, :dir()). O elemento ao qual uma
+              pseudo-classe está anexada é definido como um elemento âncora (por exemplo, botão no caso de botão: passar o mouse).
+            </p>
+            <p>
+              As pseudo-classes permitem aplicar um estilo a um elemento não apenas em relação ao conteúdo da árvore do documento, mas
+              também em relação a fatores externos como o histórico do navegador (:visited, por exemplo), o status do seu conteúdo ( como
+              :checked em certos elementos do formulário) ou a posição do mouse (como :hover, que permite saber se o mouse está sobre um
+              elemento ou não).
+            </p>
+          </div>
+          <div class="introduction">
+            <h1>Pseudo-elementos</h1>
+            <p>
+              Um pseudo-elemento CSS é uma palavra-chave adicionada a um seletor que permite estilizar uma parte específica do(s)
+              elemento(s) selecionado(s).
+            </p>
+            <p>
+              Dois pontos duplos (::) são usados para pseudo-elementos. Isso distingue pseudo-elementos de pseudo-classes que usam dois
+              pontos (:) em sua notação.
+            </p>
+            <p>
+              Você pode usar apenas um pseudo-elemento em um seletor. O pseudo-elemento deve aparecer depois de todos os outros componentes
+              do seletor complexo ou composto em que aparece. Por exemplo, você pode selecionar a primeira linha de um parágrafo usando
+              p::first-line, mas não os filhos da primeira linha ou uma primeira linha suspensa. Portanto, ambos p::first-line > * e
+              p::first-line:hover são inválidos.
+            </p>
+          </div>
+        </details>
+      </div>
+    </main>
+  </body>
+</html>
