@@ -1,7 +1,4 @@
-<div align="right">
 
-
-</div>
 
 <div align="right">
   
@@ -9,9 +6,7 @@
 
 </div>
 
-<p align="center">
-  <img alt="front-end-mentor-newbie" src=".github/front-end-mentor-newbie.png" width="350px" height="180px"/>
-</p>
+
 
 <p align="center"> 
   <img alt="Top Language" src="https://img.shields.io/github/languages/top/giselida/blog-preview?color=3498db&style=for-the-badge">
