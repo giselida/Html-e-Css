@@ -1,40 +1,35 @@
 :root {
   /* Cores principais */
   --color-white: #ffffff;
-  --color-yellow: #cc4d64;
-  --color-gray-dark: #d8d8d8;
-  --color-gray-light: #eee;
-  --color-gray: #808080;
-  --color-pink: #ed06fa;
+  --color-yellow: #ffc857; /* Amarelo suave */
+  --color-gray-dark: #333333; /* Cinza escuro */
+  --color-gray-light: #f7f7f7; /* Cinza claro */
+  --color-gray: #999999; /* Cinza médio */
+  --color-pink: #ff5e78; /* Rosa */
   --color-black: #000000;
-  --color-red-dark: #8b0000;
-  /* Gradientes  */
-  --gradient-color-gray: #e6e9f0;
-  --gradient-color-gray-light: #eef1f5;
-  --gradient-color-blue-light: #93a5cf;
-  --gradient-color-green-light: #e4efe9;
+  --color-red-dark: #c0392b; /* Vermelho escuro */
+  /* Gradientes */
+  --gradient-color-gray: #e0e0e0;
+  --gradient-color-gray-light: #f2f2f2;
+  --gradient-color-blue-light: #85d7ff; /* Azul claro */
+  --gradient-color-green-light: #a8e6cf; /* Verde claro */
 }
 
 :root:has(#dark-mode-toggle:checked) {
   /* Cores principais */
   --color-white: #1a1a1a;
-  --color-yellow: #cc4d64;
-  --color-gray-dark: #555555;
-  --color-gray-light: #eee;
-  --color-gray: #aaa;
-  --color-pink: #ed06fa;
+  --color-yellow: #ffc857; /* Amarelo suave */
+  --color-gray-dark: #555555; /* Cinza escuro */
+  --color-gray-light: #333333; /* Cinza claro */
+  --color-gray: #999999; /* Cinza médio */
+  --color-pink: #ff5e78; /* Rosa */
   --color-black: #ffffff;
-  --color-red-dark: #8b0000;
-  /* Gradientes  */
+  --color-red-dark: #c0392b; /* Vermelho escuro */
+  /* Gradientes */
   --gradient-color-gray: #29323c;
   --gradient-color-gray-light: #485563;
-  --gradient-color-blue-light: #000000ed;
-  --gradient-color-green-light: #3f3d3d;
-}
-
-::selection {
-  color: var(--color-pink);
-  background-color: var(--color-black);
+  --gradient-color-blue-light: #1a1a1a; /* Azul escuro */
+  --gradient-color-green-light: #3f3f3f; /* Verde escuro */
 }
 
 a:active {
@@ -186,7 +181,7 @@ html {
         }
         pre {
           margin-top: 10px;
-          background-color: var(--color-gray-light);
+          background-color: var(--color-black);
           border-radius: 3px;
           font-family: courier, monospace;
           padding: 0 3px;
