@@ -10,7 +10,7 @@
   <a href="https://github.com/giselida">
     <img alt="Desenvolvido por Gisélida Cristine" src="https://img.shields.io/badge/Desenvolvedor-Gisélida%20Cristine-%3498db?color=3498db&style=for-the-badge&label=Desenvolvedor">
   </a>  
-  <img alt="Licença do Projeto" src="https://img.shields.io/apm/l/vim-mode?style=for-the-badge&label=licença"/>   
+  <img alt="Licença do Projeto" src="https://img.shields.io/apm/l/vim-mode?style=for-the-badge&label=licen%C3%A7a"/>   
    <img alt="Status do Projeto" src="https://img.shields.io/badge/Concluído-%3498db?color=3498db&style=for-the-badge&label=Status">   
 </p>
 
